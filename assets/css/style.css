@@ -1,8 +1,30 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Fonts */
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial/Arial.ttf') format('truetype'),
+        url('../fonts/Arial/Web Fonts/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2') format('woff2'),
+        url('../fonts/Arial/Web Fonts/8d223b3ad8d4819e9dcf22757e4cc2c4.woff') format('woff'),
+        url('../fonts/Arial/Web Fonts/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf') format('truetype'),
+        url('../fonts/Arial/Web Fonts/8d223b3ad8d4819e9dcf22757e4cc2c4.eot') format('embedded-opentype'),
+        url('../fonts/Arial/Web Fonts/8d223b3ad8d4819e9dcf22757e4cc2c4.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Proxima N W01 Reg';
+    src: url('../fonts/Proxima N W01 Reg/Proxima N W01 Reg.ttf') format('truetype');
+}
+
 
 /* Navbar Start */
 .navbar-brand img {
@@ -13,6 +35,7 @@ box-sizing: border-box;
     padding-top: 0.8rem;
     font-size: calc(0.7rem + 0.2vw);
     text-transform: uppercase;
+    font-family: 'Proxima N W01 Reg', sans-serif;
     font-weight: 650;
     color: #000;
     position: relative;
@@ -30,9 +53,61 @@ box-sizing: border-box;
 .nav-link:hover::before,
 .nav-link.active::before {
     height: 3px;
-    background: #ee2731;
+    background: #e91f29;
 }
-.nav-link:hover, .nav-link.active {
-    color: #ee2731 !important;
+.nav-link:hover,
+.nav-link.active {
+    color: #e91f29 !important;
+}
+nav .dropdown-menu {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav .dropdown-menu li a {
+    font-weight: 600;
+    font-size: calc(0.6rem + 0.2vw);
+    text-transform: uppercase;
+    font-family: 'Proxima N W01 Reg', sans-serif;
+}
+nav .dropdown-menu li a:hover{
+    background-color: #fff;
+    color: #e91f29;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+/* Dropdown menu hover effect for screens wider than 768px */
+@media (min-width: 768px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav .dropdown-menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 170px;
+    }
+    .nav-link {
+        margin: 0.2rem 0 0.2rem 0.5rem;
+        padding-top: 0.3rem;
+        font-size: calc(0.8rem + 0.2vw);
+    }
+    .nav-link::before {
+        display: none;
+    }
+    nav .dropdown-menu li a {
+        font-size: calc(0.69rem + 0.2vw);
+    }
 }
 /* Navbar End */
