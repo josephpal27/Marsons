@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: unset !important; /* Disable default smooth scrolling in Bootstrap */
+}
+
 /* Fonts */
 @font-face {
     font-family: 'Arial';
@@ -143,3 +147,79 @@ nav .dropdown-menu li a:hover{
     }
 }
 /* Navbar End */
+
+/* Banner Slider Start */
+.banner-slider{
+    overflow: hidden;
+}
+/* Swiper Navigation Buttons */
+/* .banner-slider .swiper-button-next,
+.banner-slider .swiper-button-prev {
+    color: #fff;
+}
+
+.banner-slider .swiper-button-next{
+    right: 40px;
+}
+.banner-slider .swiper-button-prev{
+    left: 40px;
+}
+
+.banner-slider .swiper-button-next::after,
+.banner-slider .swiper-button-prev::after {
+    font-size: 35px;
+} */
+/* Banner Slider End */
+
+/* What We Do Start */
+.what-we-do{
+    overflow: hidden;
+    padding: 2.5rem 0;
+}
+.what-we-do .what-we-do-head h1{
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 1.4rem;
+}
+.what-we-do .what-we-do-head p{
+    font-size: calc(0.25rem + 1vw);
+    font-family: 'Arial', sans-serif;
+}
+.what-we-do-card-row{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.what-we-do-card{
+    width: 23%;
+}
+.what-we-do-card .card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    height: 130px;
+}
+.what-we-do-card .card-img img {
+    width: 100px;
+}
+.what-we-do-card .card-title h2{ 
+    font-family: 'Proxima N W01 Reg', sans-serif;
+    font-weight: 700;
+    font-size: calc(0.8rem + 0.5vw);
+    color: #4b4b4b;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #f15960;
+    text-decoration-thickness: 2px;
+}
+.what-we-do-card .card-desc p{ 
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.45rem + 0.5vw);
+    text-align: center;
+    margin-top: 2rem;
+}
+/* What We Do End */
