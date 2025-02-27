@@ -223,3 +223,89 @@ nav .dropdown-menu li a:hover{
     margin-top: 2rem;
 }
 /* What We Do End */
+
+/* Vision Mission Start */
+.vision-mission{
+    margin-top: 1rem;
+    overflow: hidden;
+}
+.vision-mission-box{
+    display: flex;
+}
+.vision-mission-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+}
+.vision-mission-text h1{
+    font-family: 'Helvetica', sans-serif;
+    font-size: calc(1.4rem + 1vw);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #f15960;
+    text-decoration-thickness: 2px;
+}
+.vision-mission-text p{
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.7rem + 0.5vw);
+    margin-top: 1.7rem;
+    line-height: 2;
+}
+#vision-mission-text-3 h1{
+    margin-bottom: 2.7rem;
+}
+#vision-mission-text-3 p{
+    margin-top: 0;
+    line-height: 1.3;
+}
+.vision-mission-image{
+    width: 50%;
+}
+.vision-mission-image img{
+    width: 100%;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .vision-mission-text{
+        padding: 0 6rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .vision-mission-text{
+        padding: 0 5.5rem;
+    }
+}
+/* Vision Mission End */
+
+/* Our Products Start */
+.our-products{
+    padding: 2.5rem 0;
+}
+.our-products h1{
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 1.4rem;
+}
+.our-products .products-card-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.2rem;
+}
+.our-products .products-card-row .product-card{
+    width: 23%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+.our-products .products-card-row .product-card img{
+    width: 100%;
+}
+/* Our Products End */
