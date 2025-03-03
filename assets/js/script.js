@@ -31,3 +31,17 @@ productCards.forEach((productCard, index) => {
 
 // --------------------------------------------------------------------------------------------------------------
 
+// Functionality For Footer Icon Hover
+let footIconBox = document.querySelectorAll('.footer-icon-row .footer-icon');
+let footIcon = document.querySelectorAll('.footer-icon-row .footer-icon i');
+
+footIconBox.forEach((box, i) => {
+    box.addEventListener('mouseenter', () => {
+        footIcon[i].style.color = '#e91f29';
+    })
+    box.addEventListener('mouseleave', () => {
+        footIcon[i].style.color = '#fff';
+    })
+})
+
+// --------------------------------------------------------------------------------------------------------------
