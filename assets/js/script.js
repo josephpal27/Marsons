@@ -14,3 +14,20 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // --------------------------------------------------------------------------------------------------------------
+
+// Home Page Products Card Hover Functionality
+let productCards = document.querySelectorAll('.products-card-row .product-card');
+let productCardLayer = document.querySelectorAll('.products-card-row .product-card .layer');
+
+productCards.forEach((productCard, index) => {
+    productCard.addEventListener('mouseenter', () => {
+        productCardLayer[index].style.top = '0';
+    });
+
+    productCard.addEventListener('mouseleave', () => {
+        productCardLayer[index].style.top = '-100%';
+    });
+});
+
+// --------------------------------------------------------------------------------------------------------------
+
