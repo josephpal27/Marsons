@@ -902,8 +902,8 @@ footer {
   /* Back To Top Start */
   .back-to-top{
     position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    bottom: 1rem;
+    right: 1rem;
     width: 30px;
     height: 30px;
     background-color: #fff;
