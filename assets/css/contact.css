@@ -1,0 +1,230 @@
+/* Banner Start */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.banner .banner-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.banner .banner-text h1{
+    color: #fff;
+    font-size: calc(3rem + 1vw);
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 4rem;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .banner .banner-text h1{
+        margin-left: 7.5rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner .banner-text h1{
+        font-size: calc(3.5rem + 1vw);
+        margin-left: 6rem;
+    }
+}
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .banner .banner-text h1{
+        font-size: calc(1.7rem + 1vw);
+        margin-left: 1rem;
+    }
+}
+/* Banner End */
+
+/* Contact Cards Start */
+.contact-cards-row{
+    padding: 4rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-cards-row .contact-card{
+    width: 30%;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 1.2rem;
+}
+.contact-cards-row .contact-card:hover{
+    /* border: 1px solid #707070; */
+    box-shadow: rgba(0, 0, 0, 0.156) 0px 3px 8px;
+}
+.contact-cards-row .contact-card h2{
+    font-family: 'Proxima N W01 Reg', sans-serif;
+    font-weight: 600;
+    font-size: calc(1rem + 0.5vw);
+}
+.contact-cards-row .contact-card p{
+    margin: 0;
+    line-height: 1.9;
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.5rem + 0.5vw);
+    color: #303030;
+}
+.contact-cards-row .contact-card a{
+    text-decoration: none;
+    color: #303030;
+}
+.contact-cards-row .contact-card i{
+    margin-right: 0.2rem;
+}
+.contact-cards-row .contact-card .fa-user{
+    margin-right: 0.4rem;
+}
+.contact-cards-row .contact-card .card-desc{
+    margin-top: 1.5rem;
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .contact-cards-row{
+        padding: 2rem 1rem;
+    }
+    .contact-cards-row .contact-card{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contact-cards-row .contact-card h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .contact-cards-row .contact-card p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
+/* Contact Cards End */
+
+/* Contact Us Start */
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.contact-us .contact-form{
+    width: 47%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contact-us .contact-map{
+    width: 48%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contact-us .contact-form form{
+    padding: 0 0 2rem 0;
+}
+.contact-us .contact-form form label{
+    width: 100%;
+    font-family: 'Proxima N W01 Reg', sans-serif;
+    font-weight: 600;
+    font-size: calc(0.6rem + 0.5vw);
+}
+.contact-us .contact-form form input{
+    width: 100%;
+    padding: 0.4rem 0;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 1.5px solid #979797;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.55rem + 0.5vw);
+}
+.contact-us .contact-form form input:focus{
+    border-bottom: 1.5px solid #000;
+}
+.contact-us .contact-form form textarea{
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 1.5px solid #979797;
+    outline: none;
+    transition: all 0.3s ease;
+    min-height: 4rem;
+    max-height: 4rem;
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.55rem + 0.5vw);
+}
+.contact-us .contact-form form textarea:focus{
+    border-bottom: 1.5px solid #000;
+}
+.contact-us .contact-form form .input-box{
+    margin-bottom: 1.5rem;
+}
+.contact-us .contact-form form #input-box-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us .contact-form form #input-box-1 .left,
+.contact-us .contact-form form #input-box-1 .right{
+    width: 48%;
+}
+.contact-us .contact-form form button{
+    background-color: #e91f29;
+    color: #fff;
+    border: none;
+    border: 3px solid #e91f29;
+    padding: 0.35rem 1.5rem;
+    font-family: 'Proxima N W01 Reg', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.contact-us .contact-form form button:hover{
+    background-color: transparent;
+    color: #e91f29;
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .contact-us{
+        padding: 0 1rem;
+    }
+    .contact-us .contact-form{
+        width: 100%;
+    }
+    .contact-us .contact-map{
+        width: 100%;
+        height: 50vh;
+    }
+    .contact-us .contact-form form label{
+        font-size: calc(0.85rem + 0.5vw);
+    }
+    .contact-us .contact-form form input{
+        margin-top: 0.7rem;
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    .contact-us .contact-form form textarea{
+        margin-top: 0.7rem;
+        min-height: 3rem;
+        max-height: 3rem;
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    .contact-us .contact-form form button{
+        margin-top: 0.5rem;
+        font-size: calc(0.85rem + 0.5vw);
+    }
+}
+/* Contact Us End */
+
+/* Footer Start */
+footer{
+    margin-top: 10rem;
+}
+/* Footer End */
