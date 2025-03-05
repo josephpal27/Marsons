@@ -43,3 +43,18 @@
     }
 }
 /* Banner End */
+
+/* Certification Head Start */
+.certification-head{
+    padding: 3rem 0;
+}
+.certification-head h2{
+    font-size: calc(1.2rem + 1vw);
+    font-family: 'Helvetica', sans-serif;
+    margin-bottom: 1.2rem;
+}
+.certification-head p{
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.6rem + 0.5vw);
+}
+/* Certification Head End */
