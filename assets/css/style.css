@@ -900,25 +900,35 @@ footer {
   /* Footer End */
 
   /* Back To Top Start */
-  .back-to-top{
+  .back-to-top {
     position: fixed;
-    bottom: 1rem;
+    bottom: -5rem;
     right: 1rem;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-  }
-  .back-to-top:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.423);
-  }
-  .back-to-top img{
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.4s ease-in-out;
+}
+.back-to-top img {
     width: 20px;
-  }
+    position: absolute;
+}
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+.progress-ring__circle {
+    transition: 0.1s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
   /* Back To Top End */

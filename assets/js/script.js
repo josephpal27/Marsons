@@ -59,11 +59,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     requestAnimationFrame(raf);
 
-    // Back to Top button functionality
     const backToTopButton = document.querySelector('.back-to-top');
     backToTopButton.addEventListener('click', function() {
         lenis.scrollTo(0, { duration: 0.5 });
     });
+
+    // Scroll progress functionality
+    const progressRing = document.querySelector('.progress-ring__circle');
+    const radius = progressRing.r.baseVal.value;
+    const circumference = 2 * Math.PI * radius;
+
+    progressRing.style.strokeDasharray = `${circumference} ${circumference}`;
+    progressRing.style.strokeDashoffset = circumference;
+
+    function setProgress(percent) {
+        const offset = circumference - (percent / 100) * circumference;
+        progressRing.style.strokeDashoffset = offset;
+    }
+
+    function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        setProgress(scrollPercent);
+
+        // Show or hide the back-to-top button based on scroll position
+        if (scrollTop > 200) {
+            backToTopButton.style.bottom = '1rem';
+        } else {
+            backToTopButton.style.bottom = '-5rem';
+        }
+    }
+
+    window.addEventListener('scroll', updateProgress);
+    updateProgress(); // Initial call to set the progress on page load
 });
 
 // --------------------------------------------------------------------------------------------------------------
