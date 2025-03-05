@@ -1,0 +1,316 @@
+/* Banner Start */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.banner .banner-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.banner .banner-text h1{
+    color: #fff;
+    font-size: calc(3rem + 1vw);
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 4rem;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .banner .banner-text h1{
+        margin-left: 7.5rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner .banner-text h1{
+        font-size: calc(3.5rem + 1vw);
+        margin-left: 6rem;
+    }
+}
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .banner .banner-text h1{
+        font-size: calc(1.6rem + 1vw);
+        margin-left: 1rem;
+    }
+}
+/* Banner End */
+
+/* Who We Are Start */
+.who-we-are{
+    padding: 3.5rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.who-we-are-image{
+    width: 40%;
+    overflow: hidden;
+}
+.who-we-are-image img{
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+.who-we-are-image img.active{
+    display: block;
+}
+.who-we-are-box{
+    width: 60%;
+    position: relative;
+}
+.who-we-are-box .tab-box{
+    width: 115%;
+    height: 90%;
+    margin-top: 3.65%;
+    padding: 1.5rem;
+    background-color: #e8e6e7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -15%;
+}
+.who-we-are-box .tab-box .btn-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.who-we-are-box .tab-box .btn-row button{
+    border: none;
+    font-size: calc(0.58rem + 0.5vw);
+    font-family: 'Helvetica', sans-serif;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid #e91f29;
+    color: #e91f29;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+.who-we-are-box .tab-box .btn-row button:hover{
+    background-color: #092848;
+    border: 2px solid #092848;
+    color: #fff;
+}
+.who-we-are-box .tab-box .btn-row button.active{
+    background-color: #e91f29;
+    border: 2px solid #e91f29;
+    color: #fff;
+}
+.who-we-are-box .tab-box .tab-body{
+    margin-top: 1.5rem;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding: 0.6rem;
+    min-height: 84%;
+    overflow: hidden;
+}
+.who-we-are-box .tab-box .tab-content{
+    z-index: -1;
+    opacity: 0;
+    height: 0;
+    position: relative;
+    transition: opacity 0.25s ease-in-out;
+}
+.who-we-are-box .tab-box .tab-content.active{
+    z-index: 0;
+    opacity: 1;
+    height: auto;
+}
+.who-we-are-box .tab-box .tab-content p{
+    margin: 0;
+    margin-bottom: 0.7rem;
+    font-size: calc(0.5rem + 0.5vw);
+    font-family: 'Arial', sans-serif;
+}
+.who-we-are-box .tab-box .tab-content ol{
+    margin: 0;
+    padding: 0 1.1rem;
+}
+.who-we-are-box .tab-box .tab-content ol li{
+    margin-bottom: 0.7rem;
+    font-size: calc(0.5rem + 0.5vw);
+    font-family: 'Arial', sans-serif;
+}
+.who-we-are-box .tab-box #tab-content-4 p{
+    margin-top: 0.7rem;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .who-we-are-box .tab-box{
+        height: 91%;
+        margin-top: 3.35%;
+    }
+    .who-we-are-box .tab-box .tab-body{
+        margin-top: 1.4rem;
+        min-height: 85%;
+    }
+    .who-we-are-box .tab-box .btn-row button{
+        font-size: calc(0.55rem + 0.5vw);
+        padding: 0.4rem 0.7rem;
+        border: 2.5px solid #e91f29;
+    }
+    .who-we-are-box .tab-box .btn-row button:hover{
+        border: 2.5px solid #092848;
+    }
+    .who-we-are-box .tab-box .btn-row button.active{
+        border: 2.5px solid #e91f29;
+    }
+    .who-we-are-box .tab-box .tab-content p{
+        font-size: calc(0.46rem + 0.5vw);
+    }
+    .who-we-are-box .tab-box .tab-content ol li{
+        font-size: calc(0.46rem + 0.5vw);
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .who-we-are-box .tab-box{
+        padding: 2rem;
+    }
+    .who-we-are-box .tab-box .tab-body{
+        margin-top: 1.85rem;
+        min-height: 85%;
+    }
+    .who-we-are-box .tab-box .btn-row button{
+        font-size: calc(0.6rem + 0.5vw);
+        padding: 0.4rem 1rem;
+        border: 2.5px solid #e91f29;
+    }
+    .who-we-are-box .tab-box .btn-row button:hover{
+        border: 2.5px solid #092848;
+    }
+    .who-we-are-box .tab-box .btn-row button.active{
+        border: 2.5px solid #e91f29;
+    }
+    .who-we-are-box .tab-box .tab-content p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+    .who-we-are-box .tab-box .tab-content ol li{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .who-we-are{
+        padding: 1.1rem 1rem 3rem 1rem;
+    }
+    .who-we-are-image{
+        width: 100%;
+    }
+    .who-we-are-box{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .who-we-are-box .tab-box{
+        width: 100%;
+        height: auto;
+        min-height: 157vh;
+        margin-top: 0.3rem;
+        padding: 0.9rem 0.7rem;
+        left: 0;
+    }
+    .who-we-are-box .tab-box .btn-row button{
+        width: 100%;
+        margin-bottom: 0.65rem;
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    .who-we-are-box .tab-box .btn-row button:hover{
+        background-color: #e91f29;
+        border: 2px solid #e91f29;
+    }
+    .who-we-are-box .tab-box .tab-body{
+        margin-top: 0.8rem;
+        padding: 0.5rem;
+        min-height: 113vh;
+    }
+    .who-we-are-box .tab-box .tab-content p{
+        margin-bottom: 0.5rem;
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .who-we-are-box .tab-box .tab-content ol{
+        padding: 0 0.9rem;
+    }
+    .who-we-are-box .tab-box .tab-content ol li{
+        margin-bottom: 0.5rem;
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .who-we-are-box .tab-box #tab-content-4 p{
+        margin-top: 0.5rem;
+    }
+}
+/* Who We Are End */
+
+/* Out Team Start */
+.our-team{
+    padding: 1rem 0 2rem 0;
+}
+.our-team h1{
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 1.2rem;
+}
+.our-team p{
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.25rem + 1vw);
+}
+.our-team .team-card-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.our-team .team-card-row .team-card{
+    width: 31.7%;
+}
+.our-team .team-card-row .team-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .our-team .team-card-row{
+        margin-top: 2.5rem;
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (max-width: 768px) {
+    .our-team{
+        margin-top: 153vh;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .our-team h1{
+        font-size: calc(1.2rem + 1vw);
+        margin-bottom: 0.8rem;
+    }
+    .our-team p{
+        font-size: calc(0.65rem + 1vw);
+    }
+    .our-team .team-card-row{
+        margin-top: 1.8rem;
+    }
+    .our-team .team-card-row .team-card{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+/* Out Team End */
+
+/* Footer Start */
+footer{
+    margin-top: 10rem;
+}
+/* Footer End */

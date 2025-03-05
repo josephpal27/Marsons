@@ -96,3 +96,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // --------------------------------------------------------------------------------------------------------------
+
+// Functionality for Who We Are Page Tabbing System
+let tabButtons = document.querySelectorAll('.who-we-are-box .btn-row .tab-btn');
+let tabContents = document.querySelectorAll('.who-we-are-box .tab-body .tab-content');
+let tabImages = document.querySelectorAll('.who-we-are-image img');
+
+tabButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        tabButtons.forEach((btn) => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        tabContents.forEach((content) => content.classList.remove('active'));
+        tabContents[index].classList.add('active');
+
+        tabImages.forEach((img) => img.classList.remove('active'));
+        tabImages[index].classList.add('active');
+    });
+})
