@@ -145,6 +145,7 @@
 }
 .who-we-are-box .tab-box #tab-content-4 b{
     font-family: 'Arial', sans-serif;
+    font-size: calc(0.75rem + 0.5vw);
 }
 
 /* For 110% in 15 inch screens */
