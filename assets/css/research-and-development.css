@@ -59,6 +59,16 @@
         font-size: calc(0.7rem + 0.5vw);
     }
 }
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .research-head{
+        padding: 1.3rem 1rem;
+    }
+    .research-head p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
 /* Research Head End */
 
 /* Research Cards Start */
@@ -119,6 +129,26 @@
         font-size: calc(0.9rem + 0.5vw);
     }
 }
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .research-cards{
+        padding: 0 1rem;
+    }
+    .research-cards .research-card{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .research-cards .research-card .layer{
+        padding: 0 1rem;
+    }
+    .research-cards .research-card .layer:hover{
+        opacity: 1;
+    }
+    .research-cards .research-card .layer h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+}
 /* Research Cards End */
 
 /* Research Bottom Text Start */
@@ -173,6 +203,34 @@
     }
     .research-bottom-box-content{
         margin: 2.4rem 0 2.2rem 0;
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .research-bottom-text{
+        padding: 2rem 1rem;
+    }
+    .research-bottom-box-head h2{
+        font-size: calc(0.8rem + 1vw);
+        text-underline-offset: 7px;
+        text-decoration-thickness: 1.5px;
+    }
+    .research-bottom-box-content{
+        margin: 1.6rem 0 1.8rem 0;
+    }
+    .research-bottom-image{
+        width: 100%;
+    }
+    .research-bottom-desc{
+        width: 100%;
+        margin-top: 0.7rem;
+    }
+    .research-bottom-desc p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    #research-bottom-box-content-2{
+        flex-direction: column-reverse;
     }
 }
 /* Research Bottom Text End */
