@@ -68,6 +68,21 @@
         font-size: calc(0.68rem + 0.5vw);
     }
 }
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .certification-head{
+        padding: 1.5rem 1rem;
+    }
+    .certification-head h2{
+        font-size: calc(1.1rem + 1vw);
+        margin-bottom: 0.6rem;
+    }
+    .certification-head p{
+        font-size: calc(0.75rem + 0.5vw);
+        margin-bottom: 0.6rem;
+    }
+}
 /* Certification Head End */
 
 /* Certification Cards Start */
@@ -90,6 +105,17 @@
 .certification-card-row .certification-card img{
     width: 85%;
     cursor: pointer;
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .certification-card-row{
+        gap: 5%;
+    }
+    .certification-card-row .certification-card{
+        width: 47%;
+        margin-bottom: 2.8rem;
+    }
 }
 /* Certification Cards End */
 
@@ -117,6 +143,7 @@
     width: 100%;
     margin-top: 0.3rem;
     margin-bottom: 1rem;
+    border-radius: 5px;
 }
 .certification-body-top .right{
     width: 76%;
@@ -134,6 +161,28 @@
         margin-bottom: 1.5rem;
     }
     .certification-body-text p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .certification-body-top{
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+    .certification-body-top .left{
+        width: 100%;
+    }
+    .certification-body-top .left img{
+        width: 100%;
+        margin-top: 0;
+    }
+    .certification-body-top .right{
+        width: 100%;
+    }
+    .certification-body-text p{
+        margin-bottom: 0.6rem;
         font-size: calc(0.7rem + 0.5vw);
     }
 }
