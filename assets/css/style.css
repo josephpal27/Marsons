@@ -251,9 +251,10 @@ nav .dropdown-menu li a:hover{
     }
     .what-we-do-card .card-title h2{ 
         text-underline-offset: 10px;
+        font-size: calc(1rem + 0.5vw);
     }
     .what-we-do-card .card-desc p{ 
-        font-size: calc(0.62rem + 0.5vw);
+        font-size: calc(0.7rem + 0.5vw);
         margin-top: 1.6rem;
     }
 }
@@ -340,7 +341,7 @@ nav .dropdown-menu li a:hover{
         text-underline-offset: 10px;
     }
     .vision-mission-text p{
-        font-size: calc(0.65rem + 0.5vw);
+        font-size: calc(0.7rem + 0.5vw);
         margin-top: 1.2rem;
     }
     #vision-mission-text-3 h1{
@@ -434,6 +435,7 @@ nav .dropdown-menu li a:hover{
     }
     .our-products .products-card-row .product-card .layer button{
         font-size: calc(0.5rem + 0.5vw);
+        padding: 0.25rem 0.7rem 0.2rem 0.7rem;
     }
 }
 /* Our Products End */
@@ -525,20 +527,20 @@ nav .dropdown-menu li a:hover{
         padding: 0.4rem 0;
     }
     .latest-news-card-row .latest-news-card .date span{
-        font-size: calc(0.6rem + 0.5vw);
+        font-size: calc(0.62rem + 0.5vw);
     }
     .latest-news-card-row .latest-news-card h2{
-        font-size: calc(0.9rem + 0.5vw);
+        font-size: calc(0.95rem + 0.5vw);
         margin-top: 0.2rem;
     }
     .latest-news-card-row .latest-news-card p{
-        font-size: calc(0.65rem + 0.5vw);
+        font-size: calc(0.7rem + 0.5vw);
     }
     .latest-news-card-row .latest-news-card .card-foot span{
-        font-size: calc(0.6rem + 0.5vw);
+        font-size: calc(0.7rem + 0.5vw);
     }
     .latest-news-card-row .latest-news-card .card-foot i{
-        font-size: calc(0.6rem + 0.5vw);
+        font-size: calc(0.7rem + 0.5vw);
     }
 }
 /* Latest News End */
