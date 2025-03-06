@@ -143,6 +143,9 @@
 .who-we-are-box .tab-box #tab-content-4 p{
     margin-top: 0.7rem;
 }
+.who-we-are-box .tab-box #tab-content-4 b{
+    font-family: 'Arial', sans-serif;
+}
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1260px) and (max-width: 1399px){

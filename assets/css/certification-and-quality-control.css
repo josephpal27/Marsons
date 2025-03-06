@@ -183,7 +183,7 @@
     }
     .certification-body-text p{
         margin-bottom: 0.6rem;
-        font-size: calc(0.7rem + 0.5vw);
+        font-size: calc(0.75rem + 0.5vw);
     }
 }
 /* Certification Body Text End */
