@@ -57,4 +57,96 @@
     font-family: 'Arial', sans-serif;
     font-size: calc(0.6rem + 0.5vw);
 }
+
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .certification-head h2{
+        font-size: calc(1.27rem + 1vw);
+    }
+    .certification-head p{
+        font-size: calc(0.68rem + 0.5vw);
+    }
+}
 /* Certification Head End */
+
+/* Certification Cards Start */
+.certification-card-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+.certification-card-row .certification-card{
+    width: 18%;
+    margin-bottom: 2.8rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+.certification-card-row .certification-card:hover{
+    scale: 1.1;
+}
+.certification-card-row .certification-card img{
+    width: 85%;
+    cursor: pointer;
+}
+/* Certification Cards End */
+
+/* Certification Modal Start */
+#certificationModal .modal-body img {
+    width: 100%;
+    height: auto;
+}
+#certificationModal .modal-header .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+/* Certification Modal End */
+
+/* Certification Body Text Start */
+.certification-body-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.certification-body-top .left{
+    width: 21%;
+}
+.certification-body-top .left img{
+    width: 100%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+.certification-body-top .right{
+    width: 76%;
+}
+.certification-body-text p{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .certification-body-top .left img{
+        margin-bottom: 1.5rem;
+    }
+    .certification-body-text p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
+/* Certification Body Text End */
+
+/* Footer Start */
+footer{
+    margin-top: 10rem;
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    footer{
+        margin-top: 13rem;
+    }
+}
+/* Footer End */

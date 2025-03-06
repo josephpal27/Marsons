@@ -114,3 +114,21 @@ tabButtons.forEach((button, index) => {
         tabImages[index].classList.add('active');
     });
 })
+
+// --------------------------------------------------------------------------------------------------------------
+
+// Functionality for Certification Modal
+document.addEventListener('DOMContentLoaded', function() {
+    const certificationCards = document.querySelectorAll('.certification-card img');
+    const modalImage = document.querySelector('#certificationModal #modalImage');
+    const certificationModal = new bootstrap.Modal(document.getElementById('certificationModal'));
+
+    certificationCards.forEach((img) => {
+        img.addEventListener('click', () => {
+            modalImage.src = img.src;
+            certificationModal.show();
+        });
+    });
+});
+
+// --------------------------------------------------------------------------------------------------------------
