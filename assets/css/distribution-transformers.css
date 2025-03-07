@@ -110,7 +110,8 @@
 .distribution-bottom{
     padding: 0 0 2rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2.6%;
     flex-wrap: wrap;
 }
 .distribution-bottom-image{
@@ -131,6 +132,7 @@
 @media screen and (max-width: 768px) {
     .distribution-bottom{
         padding: 0.3rem 1rem 2rem 1rem;
+        gap: 5%;
     }
     .distribution-bottom-image{
         width: 30%;
