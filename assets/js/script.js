@@ -132,3 +132,39 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // --------------------------------------------------------------------------------------------------------------
+
+// Functionality For Distribution Transformer Page Tabbing System
+let mainImage = document.querySelector('.distribution-top-image img');
+let transformerImages = document.querySelectorAll('.distribution-bottom-image img');
+
+transformerImages.forEach((img) => {
+    img.addEventListener('click', () => {
+        // Add a class to fade out the main image
+        mainImage.classList.add('fade-out');
+        img.classList.add('fade-out');
+
+        // Wait for the transition to complete before changing the src
+        setTimeout(() => {
+            let mainImageSrc = mainImage.src;
+            mainImage.src = img.src;
+            img.src = mainImageSrc;
+
+            // Remove the fade-out class and add fade-in class
+            mainImage.classList.remove('fade-out');
+            mainImage.classList.add('fade-in');
+            img.classList.remove('fade-out');
+            img.classList.add('fade-in');
+        }, 130); // Transition duration is 130ms
+    });
+
+    // Remove the fade-in class after the transition is complete
+    mainImage.addEventListener('transitionend', () => {
+        mainImage.classList.remove('fade-in');
+    });
+
+    img.addEventListener('transitionend', () => {
+        img.classList.remove('fade-in');
+    });
+});
+
+// --------------------------------------------------------------------------------------------------------------
