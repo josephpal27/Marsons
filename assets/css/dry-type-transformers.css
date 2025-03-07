@@ -1,0 +1,199 @@
+/* Banner Start */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.banner .banner-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.558);
+}
+.banner .banner-text h1{
+    color: #fff;
+    font-size: calc(3rem + 1vw);
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 4rem;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1260px) and (max-width: 1399px){
+    .banner .banner-text h1{
+        margin-left: 7.5rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner .banner-text h1{
+        font-size: calc(3.5rem + 1vw);
+        margin-left: 6rem;
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .banner .banner-text h1{
+        font-size: calc(1.6rem + 1vw);
+        margin-left: 1rem;
+    }
+}
+/* Banner End */
+
+/* Distribution Top Row Start */
+.distribution-top{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.distribution-top-image{
+    width: 25%;
+}
+.distribution-top-image img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.2s ease-in-out;
+}
+.distribution-top-desc{
+    width: 70%;
+}
+.distribution-top-desc p{
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.55rem + 0.5vw);
+}
+
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+
+.distribution-top-desc-accordian .accordion-button {
+    background-color: transparent !important;
+    color: inherit;
+    border: none;
+    box-shadow: none !important;
+}
+.distribution-top-desc-accordian .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+.distribution-top-desc-accordian .accordion-button:focus {
+    box-shadow: none !important;
+}
+.distribution-top-desc-accordian .accordion-header button {
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.53rem + 0.5vw);
+    font-weight: 600;
+    margin: 0;
+    padding: 0.5rem 0 !important;
+}
+.distribution-top-desc-accordian .accordion-body{
+    padding: 0.3rem 0 0.4rem 0;
+    margin: 0;
+}
+.distribution-top-desc-accordian .accordion-body p{
+    font-family: 'Arial', sans-serif;
+    font-size: calc(0.42rem + 0.5vw);
+    margin: 0;
+}
+.distribution-top-desc-accordian .accordion-button::after {
+    transform: scale(0.7);
+}
+.distribution-top-desc-accordian .accordion-button:not(.collapsed)::after {
+    transform: scale(0.7) rotate(180deg);
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .distribution-top{
+        padding: 3.5rem 0;
+    }
+    .distribution-top-desc p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .distribution-top{
+        padding: 1rem;
+        flex-direction: column-reverse;
+    }
+    .distribution-top-image{
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .distribution-top-desc{
+        width: 100%;
+    }
+    .distribution-top-desc p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+
+    .distribution-top-desc-accordian {
+        margin: 0 0 0.5rem 0;
+    }
+    .distribution-top-desc-accordian .accordion-header button {
+        font-size: calc(0.72rem + 0.5vw);
+    }
+    .distribution-top-desc-accordian .accordion-body p{
+        font-size: calc(0.62rem + 0.5vw);
+    }
+}
+/* Distribution Top Row End */
+
+/* Distribution Bottom Row Start */
+.distribution-bottom{
+    padding: 0 0 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.6%;
+    flex-wrap: wrap;
+}
+.distribution-bottom-image{
+    width: 14.5%;
+    cursor: pointer;
+}
+.distribution-bottom-image img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.2s ease-in-out;
+}
+.distribution-bottom-image img:hover{
+    box-shadow: rgba(0, 0, 0, 0.504) 0px 3px 8px;
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .distribution-bottom{
+        padding: 0.3rem 1rem 2rem 1rem;
+        gap: 5%;
+    }
+    .distribution-bottom-image{
+        width: 30%;
+        margin-bottom: 1.25rem;
+    }
+}
+/* Distribution Bottom Row End */
+
+/* Footer Start */
+footer{
+    margin-top: 9rem;
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    footer{
+        margin-top: 12rem;
+    }
+}
+/* Footer End */
