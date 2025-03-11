@@ -107,6 +107,27 @@
         font-size: calc(0.68rem + 0.5vw);
     }
 }
+/* For small screens */
+@media screen and (max-width: 768px){
+    .what-we-do-container{
+        padding: 1rem 1rem 1.2rem 1rem;
+    }
+    .what-we-do-container p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .what-we-do-container .card-row{
+        margin-top: 1.5rem;
+    }
+    .what-we-do-container .card-row .wwd-card{
+        width: 48.8%;
+        margin-bottom: 0.6rem;
+        padding: 0.5rem;
+    }
+    .what-we-do-container .card-row .wwd-card h2{
+        font-size: calc(0.56rem + 0.5vw);
+        margin-top: 0.55rem;
+    }
+}
 /* What We Do End */
 
 /* After Sales Services Start */
@@ -143,6 +164,24 @@
     background-color: #fff;
     color: #e92029;
     font-weight: 600;
+}
+
+/* For small screens */
+@media screen and (max-width: 768px){
+    .after-sales-services{
+        padding: 0 1rem 2.5rem 1rem;
+    }
+    .after-sales-services h1{
+        font-size: calc(1rem + 1vw);
+        margin-bottom: 0.8rem;
+    }
+    .after-sales-services p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .after-sales-services button{
+        font-size: calc(0.7rem + 0.5vw);
+        border: 1px solid #e92029;
+    }
 }
 /* After Sales Services End */
 
