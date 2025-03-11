@@ -177,6 +177,7 @@
 @media screen and (max-width: 768px){
     .distribution-top-extra{
         margin-top: 0.2rem;
+        padding: 0 1rem;
     }
     .distribution-top-extra p{
         font-size: calc(0.65rem + 0.5vw);
