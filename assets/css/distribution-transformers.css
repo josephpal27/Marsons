@@ -134,6 +134,15 @@
     .distribution-top-desc p{
         font-size: calc(0.75rem + 0.5vw);
     }
+    .distribution-top-desc .features{
+        margin-bottom: 1rem;
+    }
+    .distribution-top-desc .features b{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .distribution-top-desc .features p{
+        font-size: calc(0.65rem + 0.5vw);
+    }
 }
 /* Distribution Top Row End */
 
@@ -162,6 +171,15 @@
     .distribution-top-extra p{
         font-size: calc(0.55rem + 0.5vw);
         margin-top: 0.37rem;
+    }
+}
+/* For small screens */
+@media screen and (max-width: 768px){
+    .distribution-top-extra{
+        margin-top: 0.2rem;
+    }
+    .distribution-top-extra p{
+        font-size: calc(0.65rem + 0.5vw);
     }
 }
 /* Distribution Top Row Extra End */
